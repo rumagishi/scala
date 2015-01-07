@@ -4,6 +4,7 @@
 そこでぐぐって見つけたのがニュートン法．
 
 ほへー…
+[Newton 法による方程式の近似解法](http://www.math.u-ryukyu.ac.jp/~suga/C/2004/7/node9.html)
 
 
 ####パスワード生成.scala
