@@ -11,10 +11,16 @@ object Transposed {
     val matrix1 = List(
       List(3,1,4,1)
     , List(2,7,1,8)
-    , List(2,7,1,8)
     , List(0,5,7,7))
 
     excecute(matrix1)
+
+    val matrix2 = List(
+      List(3,1)
+    , List(2,7)
+    , List(0,5))
+
+    excecute(matrix2)
   }
 
   def excecute(matrix: List[List[Int]]) = {
@@ -34,12 +40,6 @@ object Transposed {
 
 class MyTransposed(matrix: List[List[Int]]) {
   def trans() = 
-    (0 until matrix.length).map(j => (0 until matrix(j).size).map(i=> matrix(i)(j)))
+    (0 until matrix(0).length).map(j => (0 until matrix.size).map(i=> matrix(i)(j)))
   
 }
-
-//class Transposed(matrix: List[List[Int]]) {
-//  def calculate(): List[List[Int]] = {
-//    matrix.transpose
-//  }
-//}
